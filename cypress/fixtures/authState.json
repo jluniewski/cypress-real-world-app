@@ -1,0 +1,141 @@
+{
+	"actions": [
+		{
+			"type": "xstate.stop",
+			"activity": {
+				"src": { "type": "performLogin" },
+				"id": "authentication.loading:invocation[0]",
+				"type": "xstate.invoke"
+			}
+		},
+		{ "type": "redirectHomeAfterLogin" }
+	],
+	"activities": {
+		"authentication.logout:invocation[0]": false,
+		"authentication.loading:invocation[0]": false,
+		"authentication.refreshing:invocation[0]": false,
+		"authentication.signup:invocation[0]": false
+	},
+	"meta": {},
+	"events": [],
+	"value": "authorized",
+	"context": {
+		"user": {
+			"id": "bDjUb4ir5O",
+			"uuid": "b4ebe114-141c-4397-9346-dd37d788f71b",
+			"firstName": "Kaylin",
+			"lastName": "Homenick",
+			"username": "Allie2",
+			"password": "$2a$10$5PXHGtcsckWtAprT5/JmluhR13f16BL8SIGhvAKNP.Dhxkt69FfzW",
+			"email": "Rebeca35@yahoo.com",
+			"phoneNumber": "072-208-4283",
+			"avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/bDjUb4ir5O.svg",
+			"defaultPrivacyLevel": "private",
+			"balance": 163667,
+			"createdAt": "2019-09-15T04:44:05.536Z",
+			"modifiedAt": "2020-05-21T18:25:10.341Z"
+		}
+	},
+	"_event": {
+		"name": "done.invoke.authentication.loading:invocation[0]",
+		"data": {
+			"type": "done.invoke.authentication.loading:invocation[0]",
+			"data": {
+				"user": {
+					"id": "bDjUb4ir5O",
+					"uuid": "b4ebe114-141c-4397-9346-dd37d788f71b",
+					"firstName": "Kaylin",
+					"lastName": "Homenick",
+					"username": "Allie2",
+					"password": "$2a$10$5PXHGtcsckWtAprT5/JmluhR13f16BL8SIGhvAKNP.Dhxkt69FfzW",
+					"email": "Rebeca35@yahoo.com",
+					"phoneNumber": "072-208-4283",
+					"avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/bDjUb4ir5O.svg",
+					"defaultPrivacyLevel": "private",
+					"balance": 163667,
+					"createdAt": "2019-09-15T04:44:05.536Z",
+					"modifiedAt": "2020-05-21T18:25:10.341Z"
+				}
+			}
+		},
+		"$$type": "scxml",
+		"type": "external",
+		"origin": "authentication.loading:invocation[0]"
+	},
+	"_sessionid": "x:0",
+	"event": {
+		"type": "done.invoke.authentication.loading:invocation[0]",
+		"data": {
+			"user": {
+				"id": "bDjUb4ir5O",
+				"uuid": "b4ebe114-141c-4397-9346-dd37d788f71b",
+				"firstName": "Kaylin",
+				"lastName": "Homenick",
+				"username": "Allie2",
+				"password": "$2a$10$5PXHGtcsckWtAprT5/JmluhR13f16BL8SIGhvAKNP.Dhxkt69FfzW",
+				"email": "Rebeca35@yahoo.com",
+				"phoneNumber": "072-208-4283",
+				"avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/bDjUb4ir5O.svg",
+				"defaultPrivacyLevel": "private",
+				"balance": 163667,
+				"createdAt": "2019-09-15T04:44:05.536Z",
+				"modifiedAt": "2020-05-21T18:25:10.341Z"
+			}
+		}
+	},
+	"historyValue": { "current": "authorized", "states": {} },
+	"history": {
+		"actions": [
+			{
+				"type": "xstate.start",
+				"activity": {
+					"src": { "type": "performLogin" },
+					"id": "authentication.loading:invocation[0]",
+					"type": "xstate.invoke"
+				}
+			}
+		],
+		"activities": {
+			"authentication.logout:invocation[0]": false,
+			"authentication.loading:invocation[0]": {
+				"type": "xstate.start",
+				"activity": {
+					"src": { "type": "performLogin" },
+					"id": "authentication.loading:invocation[0]",
+					"type": "xstate.invoke"
+				}
+			},
+			"authentication.refreshing:invocation[0]": false,
+			"authentication.signup:invocation[0]": false
+		},
+		"meta": {},
+		"events": [],
+		"value": "loading",
+		"context": { "message": "Request failed with status code 500" },
+		"_event": {
+			"name": "LOGIN",
+			"data": {
+				"type": "LOGIN",
+				"username": "Allie2",
+				"password": "s3cret"
+			},
+			"$$type": "scxml",
+			"type": "external"
+		},
+		"_sessionid": "x:0",
+		"event": {
+			"type": "LOGIN",
+			"username": "Allie2",
+			"password": "s3cret"
+		},
+		"historyValue": { "current": "loading", "states": {} },
+		"children": {},
+		"done": false,
+		"changed": true,
+		"tags": []
+	},
+	"children": {},
+	"done": false,
+	"changed": true,
+	"tags": []
+}

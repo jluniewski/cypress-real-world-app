@@ -1,0 +1,39 @@
+{
+	"everyone": {
+		"to": "Arely Kertzmann",
+		"from": "Kaylin Homenick",
+		"amount": "-$80.31",
+		"likes": 0,
+		"comments": {}
+	},
+	"everyoneComment": {
+		"to": "Ibrahim Dickens",
+		"from": "Edgar Johns",
+		"amount": "-$255.22",
+		"likes": 0,
+		"comments": {
+			"comm_1": {
+				"text": "qui explicabo voluptatum"
+			}
+		}
+	},
+	"friends": {
+		"to": "Arely Kertzmann",
+		"from": "Kaylin Homenick",
+		"amount": "-$337.92",
+		"likes": 1,
+		"comments": {}
+	},
+	"personal": {
+		"to": "Ibrahim Dickens",
+		"from": "Edgar Johns",
+		"amount": "-$363.14",
+		"likes": 0,
+		"comments": {}
+	},
+	"newComment": {
+		"comments": {
+			"comm_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis suscipit elit sit amet sollicitudin."
+		}
+	}
+}

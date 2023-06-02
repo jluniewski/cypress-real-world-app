@@ -1,0 +1,11 @@
+{
+    "invalidUsernamePassword": "Username or password is invalid",
+    "requiredUsername": "Username is required",
+    "shortPassword": "Password must contain at least 4 characters",
+    "firstNameValidation": "First Name is required",
+    "lastNameValidation": "Last Name is required",
+    "usernameValidation": "Username is required",
+    "passwordValidation": "Enter your password",
+    "confirmValidation": "Confirm your password",
+    "notMatchingPassword": "Password does not match"
+}
