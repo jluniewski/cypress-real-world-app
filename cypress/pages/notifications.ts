@@ -18,4 +18,10 @@ export class Notifications {
     static getNumberOfNotifications() {
         return cy.getByDataTest('nav-top-notifications-count');
     }
+    static assertAllNotifications(notificationsTable) {
+        this.getList().as('NotificationsList');
+        cy.wrap(notificationsTable).each(function(notification) {
+            cy.get('@NotificationsList').should('contain', notification);
+        })
+    }
 }

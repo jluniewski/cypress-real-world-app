@@ -12,22 +12,14 @@ describe('Notifications Page', function () {
         cy.visit('/notifications');
     })
     it('shows all notifications on the list', function () {
-        Notifications.getList()
-            .should('contain', this.notifications.list[0])
-            .and('contain', this.notifications.list[1])
-            .and('contain', this.notifications.list[2])
-            .and('contain', this.notifications.list[3])
+        Notifications.assertAllNotifications(this.notifications.list);
     })
     it('can be opened from bell icon', function () {
         cy.visit('/');
         Notifications.clickBellIcon();
-        Notifications.getList()
-            .should('contain', this.notifications.list[0])
-            .and('contain', this.notifications.list[1])
-            .and('contain', this.notifications.list[2])
-            .and('contain', this.notifications.list[3])
+        Notifications.assertAllNotifications(this.notifications.list);
         Notifications.getNumberOfNotifications()
-            .should('contain', this.notifications.list.length)
+            .should('contain', this.notifications.list.length);
     })
     it('allows to dismiss a notification', function () {
         Notifications.dismiss(this.notifications.list[2]);
