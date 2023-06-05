@@ -5,4 +5,7 @@ export class General {
   static reloadPage() {
     cy.reload();
   }
+  static getMainPage() {
+    return cy.get('main');
+  }
 }

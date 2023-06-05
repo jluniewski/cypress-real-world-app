@@ -23,5 +23,6 @@
     "shortBankName": "Must contain at least 5 characters",
     "invalidRoutingNumber": "Must contain a valid routing number",
     "shortAccountNumber": "Must contain at least 9 digits",
-    "longAccountNumber": "Must contain no more than 12 digits"
+    "longAccountNumber": "Must contain no more than 12 digits",
+    "noNotifications": "No Notifications"
 }
