@@ -1,5 +1,6 @@
 import { Transactions } from "../../pages/transactions";
 import { General } from "../../pages/general";
+import { Sidebar } from "../../pages/sidebar";
 
 describe('New Transaction', function() {
     beforeEach(function () {
@@ -97,5 +98,13 @@ describe('New Transaction', function() {
 			this.users.userKaylin.userId,
 			this.transactions.newTransactionMultiple2.amount
 		).should('be.visible');
+    })
+    it('should change users Account Balance', function () {
+        Transactions.selectUser(this.users.userKaylin);
+        Transactions.typeAmount(this.transactions.accountBalance.amount);
+        Transactions.typeNote(this.transactions.accountBalance.note);
+        Transactions.clickPayButton();
+        Transactions.clickReturnToTransactions();
+        Sidebar.getSidebar().should('contain', this.transactions.accountBalance.balanceAfter);
     })
 })

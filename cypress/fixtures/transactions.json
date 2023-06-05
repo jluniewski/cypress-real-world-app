@@ -59,5 +59,12 @@
 		"from": "Edgar Johns",
 		"amount": "$99.00",
 		"note": "Another note for Multiple transactions"
+	},
+	"accountBalance": {
+		"to": "Kaylin Homenick",
+		"from": "Edgar Johns",
+		"amount": "$100",
+		"note": "Account Balance check Transaction",
+		"balanceAfter": "$1,581.37"
 	}
 }
