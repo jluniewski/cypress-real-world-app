@@ -10,5 +10,11 @@
     "notMatchingPassword": "Password does not match",
     "emptyAmount": "Please enter a valid amount",
     "emptyNote": "Please enter a note",
-    "transactionAdded": "Transaction Submitted!"
+    "transactionAdded": "Transaction Submitted!",
+    "accountEmptyFirstName": "Enter a first name",
+    "accountEmptyLastName": "Enter a last name",
+    "accountEmptyEmail": "Enter an email address",
+    "accountEmptyPhone": "Enter a phone number",
+    "accountIncorrectEmail": "Must contain a valid email address",
+    "accountIncorrectPhone": "Phone number is not valid"
 }
