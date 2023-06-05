@@ -7,5 +7,8 @@
     "usernameValidation": "Username is required",
     "passwordValidation": "Enter your password",
     "confirmValidation": "Confirm your password",
-    "notMatchingPassword": "Password does not match"
+    "notMatchingPassword": "Password does not match",
+    "emptyAmount": "Please enter a valid amount",
+    "emptyNote": "Please enter a note",
+    "transactionAdded": "Transaction Submitted!"
 }

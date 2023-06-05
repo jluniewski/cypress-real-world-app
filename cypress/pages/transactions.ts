@@ -6,9 +6,6 @@ export class Transactions {
 			.get('li[data-test*="transaction-item"]')
 			.contains(amount)
 			.parentsUntil('li')
-			.contains(`Payment: ${fromId} to ${toId}`)
-			.parentsUntil('li')
-      .last();
 	}
 	static openTransaction(fromId, toId, amount) {
 		this.getTransaction(fromId, toId, amount).click();
@@ -89,5 +86,49 @@ export class Transactions {
   }
   static typeNewContactSearch(user) {
     cy.getByDataTest('user-list-search-input').type(`${user.name} ${user.lastname}`);
+  }
+  static getUsersList() {
+    return cy.getByDataTest('users-list');
+  }
+  static selectUser(user) {
+    cy.contains('li[data-test*=user-list-item]', `${user.name} ${user.lastname}`).click();
+  }
+  static typeAmount(amount) {
+    cy.get('#amount').type(amount);
+  }
+  static typeNote(note) {
+    cy.get('#transaction-create-description-input').type(note);
+  }
+  static clickAmount() {
+    cy.get('#amount').click();
+  }
+  static clickNote() {
+    cy.get('#transaction-create-description-input').click();
+  }
+  static getPaymentForm() {
+    return cy.getByDataTest('transaction-create-form').parent().parent();
+  }
+  static getRequestButton() {
+    return cy.getByDataTest('transaction-create-submit-request');
+  }
+  static getPayButton() {
+    return cy.getByDataTest('transaction-create-submit-payment');
+  }
+  static clickRequestButton() {
+    this.getRequestButton().click();
+  }
+  static clickPayButton() {
+    this.getPayButton().click();
+  }
+  static clickReturnToTransactions() {
+    cy.getByDataTest('new-transaction-return-to-transactions').click();
+  }
+  static clickCreateAnother() {
+    cy.getByDataTest('new-transaction-create-another-transaction').click();
+  }
+  static getCompleteForm() {
+    return cy.getByDataTest('new-transaction-return-to-transactions')
+      .parentsUntil('main[data-test="main"]')
+      .last();
   }
 }

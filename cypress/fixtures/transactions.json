@@ -35,5 +35,29 @@
 		"comments": {
 			"comm_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis suscipit elit sit amet sollicitudin."
 		}
+	},
+	"newTransactionRequest": {
+		"to": "Arely Kertzmann",
+		"from":"Edgar Johns",
+		"amount": "$224.00",
+		"note": "Test note for Request transaction"
+	},
+	"newTransactionPay": {
+		"to": "Ibrahim Dickens",
+		"from": "Edgar Johns",
+		"amount": "$555.00",
+		"note": "Test note for Pay transaction"
+	},
+	"newTransactionMultiple": {
+		"to": "Kaylin Homenick",
+		"from": "Edgar Johns",
+		"amount": "$771.00",
+		"note": "Test note for Multiple transactions"
+	},
+	"newTransactionMultiple2": {
+		"to": "Kaylin Homenick",
+		"from": "Edgar Johns",
+		"amount": "$99.00",
+		"note": "Another note for Multiple transactions"
 	}
 }
