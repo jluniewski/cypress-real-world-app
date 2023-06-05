@@ -16,5 +16,12 @@
     "accountEmptyEmail": "Enter an email address",
     "accountEmptyPhone": "Enter a phone number",
     "accountIncorrectEmail": "Must contain a valid email address",
-    "accountIncorrectPhone": "Phone number is not valid"
+    "accountIncorrectPhone": "Phone number is not valid",
+    "emptyBankName": "Enter a bank name",
+    "emptyRoutingNumber": "Enter a valid bank routing number",
+    "emptyAccountNumber": "Enter a valid bank account number",
+    "shortBankName": "Must contain at least 5 characters",
+    "invalidRoutingNumber": "Must contain a valid routing number",
+    "shortAccountNumber": "Must contain at least 9 digits",
+    "longAccountNumber": "Must contain no more than 12 digits"
 }
